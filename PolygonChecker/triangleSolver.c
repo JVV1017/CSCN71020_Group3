@@ -58,7 +58,7 @@ double* getTriangleSides(double* triangleSides) {
 	return triangleSides;
 }
 
-double triagleangles(double a,double b,double c){ 
+double triangleAngles(double a,double b,double c){ 
 
 	double angleA = acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / PI);
 	double angleB = acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / PI);
