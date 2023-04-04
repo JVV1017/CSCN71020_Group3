@@ -33,17 +33,14 @@ char* analyzeTriangle(double side1, double side2, double side3) {
 
 void validateTriangleSides()
 {
-	double triangleSides[3] = { 0, 0, 0 };
+	double triangleSides[3];
 	double* triangleSidesPtr = getTriangleSides(triangleSides);
-	//printf_s("! %d\n", triangleSidesPtr[0]);
-
 	char* result = analyzeTriangle(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2]);
 	printf_s("%s\n", result);
-
-	double a= triangleSidesPtr[0];
-	double b= triangleSidesPtr[1];
-	double c= triangleSidesPtr[2];
-	double triagleangles(a,b,c);
+	double a = triangleSidesPtr[0];
+	double b = triangleSidesPtr[1];
+	double c = triangleSidesPtr[2];
+	triangleAngles(a, b, c);
 
 }
 
@@ -58,7 +55,7 @@ double* getTriangleSides(double* triangleSides) {
 	return triangleSides;
 }
 
-double triangleAngles(double a,double b,double c){ 
+void triangleAngles(double a,double b,double c){ 
 
 	double angleA = acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / PI);
 	double angleB = acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / PI);

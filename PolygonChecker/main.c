@@ -26,18 +26,22 @@ int main() {
 			PrintTriangleMenu();
 	
 			int inputchoice;
-			printf("Enter your choice:");
-			scanf_s("%1o", &inputchoice);
-			if(inputchoice==1)
-			{
-				validateTriangleSides();
-				
+			printf("Enter your choice (1 or 2): ");
+			if (scanf_s("%d", &inputchoice) != 1 || (inputchoice != 1 && inputchoice != 2)) {
+				printf("Invalid input. Please enter 1 or 2.\n");
+				// Handle the error appropriately (e.g. exit the program or prompt the user again).
 			}
-	
-			else if (inputchoice == 2)
-			{
-				trianglecoordinates();
+			else {
+				// User input is valid. Proceed with the appropriate function call.
+				if (inputchoice == 1) {
+					validateTriangleSides();
+				}
+				else {
+					trianglecoordinates();
+				}
 			}
+			return 0;
+
 		
 		case 0:
 			continueProgram = false;
@@ -61,8 +65,8 @@ void printWelcome() {
 }
 
 int printShapeMenu() {
-	printf_s("2. Rectangle\n");
 	printf_s("1. Triangle\n");
+	printf_s("2. Rectangle\n");
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
@@ -75,11 +79,12 @@ int printShapeMenu() {
 
 
 
-void PrintTriangleMenu() {
+int PrintTriangleMenu() {
 
 	printf_s("TRIANGLE SELECTED\n\n");
 	printf_s("Select the input\n");
 	printf("1. Input side\n");
 	printf("2. Get Triangle angles\n");
 	printf("3. Input Coordinates\n");
+	return 0;
 }

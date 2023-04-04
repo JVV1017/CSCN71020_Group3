@@ -4,5 +4,5 @@ char* analyzeTriangle(double side1, double side2, double side3);
 char* trianglecoordinates();
 void validateTriangleSides();
 double* getTriangleSides(double* );
-double* triangleAngles(double a, double b, double c);
+void triangleAngles(double a, double b, double c);
 
