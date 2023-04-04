@@ -12,41 +12,53 @@ char* trianglecoordinates() {
 
 
     printf("Enter x coordinate of the first point:");
-    while (scanf_s("%lf", &x1) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &x1) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input. Please enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("Enter y coordinate of the first point:");
-    while (scanf_s("%lf", &y1) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &y1) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input. \nPlease enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("The Coordinates of the first point (%.2f,%.2f)\n",x1, y1);
 
 
     printf("Enter x coordinate of the second point:");
-    while (scanf_s("%lf", &x2) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &x2) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input.\n Please enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("Enter y coordinate of the second point:");
-    while (scanf_s("%lf", &y2) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &y2) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input. Please enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("The Coordinates of the second point (%.2lf,%.2lf)\n", x2, y2);
 
 
  
     printf("Enter x coordinate of the third point:");
-    while (scanf_s("%lf", &x3) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &x3) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input.\n Please enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("Enter y coordinate of the third point:");
-    while (scanf_s("%lf", &y3) != 1 || getchar() != '\n') {
+    while (scanf_s("%lf", &y3) != 1 || getchar() != '\n') 
+    {
         printf("Invalid input.\n Please enter a valid number:\n");
-        while (getchar() != '\n'); // clear the input buffer
+        while (getchar() != '\n'); 
+
     }
     printf("The Coordinates of the third point (%.2lf,%.2lf)\n", x3, y3);
 
@@ -57,5 +69,6 @@ char* trianglecoordinates() {
 
     char* result = analyzeTriangle(side1, side2, side3);
     printf("%s\n", result);
-
+    triangleAngles(side1, side2,side3);
+    
 }
