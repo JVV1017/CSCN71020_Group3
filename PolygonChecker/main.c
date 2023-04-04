@@ -5,7 +5,10 @@
 #include "main.h"
 #include "triangleSolver.h"
 
+// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+
 int side = 0;
+
 
 int main() 
 {
@@ -17,11 +20,12 @@ int main()
 
 		int shapeChoice = printShapeMenu();
 
+		//Modified Switch Cases for better input validation
 		switch (shapeChoice)
 		{
 		
 
-		case 1:
+		case 1: 
 			PrintTriangleMenu();
 	
 			int inputchoice;
@@ -44,7 +48,7 @@ int main()
 				}
 			}
 			return 0;
-
+			// Added case for rectangle function
 		case 2:
 			printf_s("RECTANGLE SELECTED\n");
 			rectangleSolver();
@@ -62,6 +66,7 @@ int main()
 	return 0;
 }
 
+// The function delivers the introduction of the program to the screen
 void printWelcome() 
 {
 	printf_s("\n");
@@ -71,6 +76,7 @@ void printWelcome()
 	printf_s(" **********************\n");
 }
 
+// This functions shows on screen, a menu with 3 options that the user could input to go through the program
 int printShapeMenu() 
 {
 	printf_s("1. Triangle\n");
@@ -86,7 +92,7 @@ int printShapeMenu()
 }
 
 
-
+// This function will the show a menu of 2 options when the user inputted to go through the triangle option
 int PrintTriangleMenu() 
 {
 

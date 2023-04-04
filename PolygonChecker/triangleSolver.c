@@ -5,6 +5,9 @@
 #include<math.h>
 #define PI        3.14159265358979323846
 
+// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+
+// This function checks whether the three sides that was inputted by the user to form a triangle or not 
 char* analyzeTriangle(double side1, double side2, double side3) 
 {
 	char* result = "";
@@ -37,7 +40,7 @@ char* analyzeTriangle(double side1, double side2, double side3)
 
 
 
-
+// This function calls other triangle functions to get three sides of a triangle and then these three points will be used to determine the type of triangles and its lengths.
 void validateTriangleSides()
 {
 	double triangleSides[3];
@@ -51,6 +54,7 @@ void validateTriangleSides()
 
 }
 
+// This function will get three sides of a traingle from the user
 double* getTriangleSides(double* triangleSides) 
 {
 	printf_s("Enter the three sides of the triangle: ");
@@ -62,6 +66,7 @@ double* getTriangleSides(double* triangleSides)
 	return triangleSides;
 }
 
+// This function takes the three doubles as input and calculates the angles of a triangle using the law of cosines
 void triangleAngles(double a,double b,double c){ 
 
 	double angleA = acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / PI);

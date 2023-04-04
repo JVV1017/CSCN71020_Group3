@@ -3,12 +3,16 @@
 #include <math.h>
 #include "rectangleSolver.h"
 
+// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+
+// The code to find the distance of 2 points with coordinates
 double distance(int x1, int y1, int x2, int y2) 
 {
     int distance_value = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
     return distance_value;
 }
 
+// The code to get a user inputted coordinates to check whether they form a rectangle
 void rectangleSolver() 
 {
     int x1, y1, x2, y2, x3, y3, x4, y4;
@@ -63,6 +67,7 @@ void rectangleSolver()
         return 1;
     }
     
+    // The code to compare the x and y coordinates of each left, right, top and bottom values
     int left = x1, right = x1, top = y1, bottom = y1;
     if (x2 < left || (x2 == left && y2 < top)) 
     {
@@ -95,7 +100,7 @@ void rectangleSolver()
         bottom = y4;
     }
 
-   
+    // The code to calculate the distance between each pair of x and y coordinates using the distance formula
     double d1 = distance(x1, y1, x2, y2);
     double d2 = distance(x2, y2, x3, y3);
     double d3 = distance(x3, y3, x4, y4);
