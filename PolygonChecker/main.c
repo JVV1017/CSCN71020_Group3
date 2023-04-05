@@ -5,7 +5,7 @@
 #include "main.h"
 #include "triangleSolver.h"
 
-// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+// JoseVV, HaydenPB, JerinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development (Group - 3)
 
 int side = 0;
 

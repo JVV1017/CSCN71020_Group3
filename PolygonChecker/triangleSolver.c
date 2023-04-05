@@ -5,7 +5,7 @@
 #include<math.h>
 #define PI        3.14159265358979323846
 
-// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+// JoseVV, HaydenPB, JerinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development (Group - 3)
 
 // This function will the show a menu of 2 options when the user inputted to go through the triangle option
 int PrintTriangleMenu()

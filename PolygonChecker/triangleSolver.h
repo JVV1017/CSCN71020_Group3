@@ -1,4 +1,4 @@
-// JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
+// JoseVV, HaydenPB, JerinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development (Group - 3)
 #pragma once
 
 char* analyzeTriangle(double side1, double side2, double side3);
