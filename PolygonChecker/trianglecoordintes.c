@@ -74,5 +74,5 @@ char* trianglecoordinates() {
     char* result = analyzeTriangle(side1, side2, side3);
     printf("%s\n", result);
     triangleAngles(side1, side2,side3);
-    
+    return 0;
 }

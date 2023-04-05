@@ -7,6 +7,17 @@
 
 // JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
 
+// This function will the show a menu of 2 options when the user inputted to go through the triangle option
+int PrintTriangleMenu()
+{
+
+	printf_s("TRIANGLE SELECTED\n\n");
+	printf_s("Select which kind of methond of input for a triangle\n");
+	printf("1. Input side\n");
+	printf("2. Input Coordinates\n");
+	return 1;
+}
+
 // This function checks whether the three sides that was inputted by the user to form a triangle or not 
 char* analyzeTriangle(double side1, double side2, double side3) 
 {

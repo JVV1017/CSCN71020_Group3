@@ -6,69 +6,69 @@
 // JoseVV, HaydenPB, JerrinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development
 
 // The code to find the distance of 2 points with coordinates
-double distance(int x1, int y1, int x2, int y2) 
+double distance(double x1, double y1, double x2, double y2) 
 {
-    int distance_value = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+    double distance_value = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
     return distance_value;
 }
 
 // The code to get a user inputted coordinates to check whether they form a rectangle
-void rectangleSolver() 
+double rectangleSolver() 
 {
-    int x1, y1, x2, y2, x3, y3, x4, y4;
+    double x1, y1, x2, y2, x3, y3, x4, y4;
 
     
     printf("Enter the coordinate point x1: ");
-    if (scanf_s("%d", &x1) != 1) 
+    if (scanf_s("%lf", &x1) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point y1: ");
-    if (scanf_s("%d", &y1) != 1) 
+    if (scanf_s("%lf", &y1) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point x2: ");
-    if (scanf_s("%d", &x2) != 1) 
+    if (scanf_s("%lf", &x2) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point y2: ");
-    if (scanf_s("%d", &y2) != 1) 
+    if (scanf_s("%lf", &y2) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point x3: ");
-    if (scanf_s("%d", &x3) != 1) 
+    if (scanf_s("%lf", &x3) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point y3 : ");
-    if (scanf_s("%d", &y3) != 1) 
+    if (scanf_s("%lf", &y3) != 1) 
     {
-            printf("Invalid input. Please enter an integer.\n");
-            return 1;
+        printf("Invalid input. Please enter an integer.\n");
+        return 1;
      }
     printf("Enter the coordinate point x4: ");
-    if (scanf_s("%d", &x4) != 1) 
+    if (scanf_s("%lf", &x4) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     printf("Enter the coordinate point y4: ");
-    if (scanf_s("%d", &y4) != 1) 
+    if (scanf_s("%lf", &y4) != 1) 
     {
         printf("Invalid input. Please enter an integer.\n");
         return 1;
     }
     
     // The code to compare the x and y coordinates of each left, right, top and bottom values
-    int left = x1, right = x1, top = y1, bottom = y1;
+    double left = x1, right = x1, top = y1, bottom = y1;
     if (x2 < left || (x2 == left && y2 < top)) 
     {
         left = x2;
@@ -121,4 +121,5 @@ void rectangleSolver()
     {
         printf("The points do not form a rectangle.\n");
     }
+    return 0;
 }

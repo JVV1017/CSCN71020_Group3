@@ -6,4 +6,4 @@ char* trianglecoordinates();
 void validateTriangleSides();
 double* getTriangleSides(double* );
 void triangleAngles(double a, double b, double c);
-
+int PrintTriangleMenu();

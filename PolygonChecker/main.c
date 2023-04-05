@@ -9,7 +9,6 @@
 
 int side = 0;
 
-
 int main() 
 {
 	
@@ -26,7 +25,8 @@ int main()
 		
 
 		case 1: 
-			PrintTriangleMenu();
+			 PrintTriangleMenu();
+			
 	
 			int inputchoice;
 			printf("Enter your choice (1 or 2): ");
@@ -92,13 +92,4 @@ int printShapeMenu()
 }
 
 
-// This function will the show a menu of 2 options when the user inputted to go through the triangle option
-int PrintTriangleMenu() 
-{
 
-	printf_s("TRIANGLE SELECTED\n\n");
-	printf_s("Select which kind of methond of input for a triangle\n");
-	printf("1. Input side\n");
-	printf("2. Input Coordinates\n");
-	return 0;
-}
