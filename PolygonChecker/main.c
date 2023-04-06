@@ -4,6 +4,7 @@
 #include "rectangleSolver.h"
 #include "main.h"
 #include "triangleSolver.h"
+#include "trianglecoordintes.h"
 
 // JoseVV, HaydenPB, JerinP, EvanTJ, HarshH - CSCN7102023W - Group Assignment - App Feature Development (Group - 3)
 
