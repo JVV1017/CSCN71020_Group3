@@ -4,5 +4,5 @@
 char* analyzeTriangle(double side1, double side2, double side3);
 void validateTriangleSides();
 double* getTriangleSides(double* );
-void triangleAngles(double a, double b, double c);
+double* triangleAngles(double a, double b, double c);
 int PrintTriangleMenu();

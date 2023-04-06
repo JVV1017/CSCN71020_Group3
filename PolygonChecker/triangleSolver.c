@@ -25,12 +25,14 @@ char* analyzeTriangle(double side1, double side2, double side3)
 	char* result = "";
 	if (side1 <= 0 || side2 <= 0 || side3 <= 0) 
 	{
-		printf("Not a triangle");
+		result="Not a triangle";
+		return result;
 		exit(EXIT_FAILURE);
 	}
 	else if (side1 + side2 < side3 || side2 + side3 < side1 || side3 + side1 < side2) 
 	{
-		printf("Not a triangle");
+		result="Not a triangle";
+		return result;
 		exit(EXIT_FAILURE);
 	}
 	else if (side1 == side2 && side1 == side3) 
@@ -79,7 +81,7 @@ double* getTriangleSides(double* triangleSides)
 }
 
 // This function takes the three doubles as input and calculates the angles of a triangle using the law of cosines
-void triangleAngles(double a,double b,double c){ 
+double* triangleAngles(double a,double b,double c){ 
 
 	double angleA = acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / PI);
 	double angleB = acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / PI);
@@ -88,5 +90,8 @@ void triangleAngles(double a,double b,double c){
 	printf("Angle A = %.2lf degrees\n", angleA);
 	printf("Angle B = %.2lf degrees\n", angleB);
 	printf("Angle C = %.2lf degrees\n", angleC);
+	double angleArray[3] = { angleA,angleB,angleC };
+	
+	return angleArray;
 
 }

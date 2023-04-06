@@ -1,2 +1,3 @@
 #pragma once
-char* trianglecoordinates();
+char* GetCoordinateInput();
+char* trianglecoordinates(double,double,double,double,double,double);

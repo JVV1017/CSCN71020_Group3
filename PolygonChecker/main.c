@@ -45,7 +45,8 @@ int main()
 				}
 				else 
 				{
-					trianglecoordinates();
+					double*array=GetCoordinateInput();
+					trianglecoordinates(array[0],array[1],array[2],array[3],array[4],array[5]);
 				}
 			}
 			return 0;
