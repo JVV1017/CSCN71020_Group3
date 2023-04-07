@@ -20,9 +20,46 @@ namespace TestSuitDevelopmentGroup3
 	TEST_CLASS(JerinTesting) //Testing for Triangle using regular sides
 	{
 	public:
-
-		
-
+		TEST_METHOD(TestMethod1)
+		{
+			double side1 = 5;
+			double side2 = 5;
+			double side3 = 5;
+			char* result = analyzeTriangle(side1, side2, side3);
+			Assert::AreEqual("Equilateral triangle", result);
+		}
+		TEST_METHOD(TestMethod2)
+		{
+			double side1 = 5;
+			double side2 = 5;
+			double side3 = 6;
+			char* result = analyzeTriangle(side1, side2, side3);
+			Assert::AreEqual("Isosceles triangle", result);
+		}
+		TEST_METHOD(TestMethod3)
+		{
+			double side1 = 5;
+			double side2 = 7;
+			double side3 = 6;
+			char* result = analyzeTriangle(side1, side2, side3);
+			Assert::AreEqual("Scalene triangle", result);
+		}
+		TEST_METHOD(TestMethod4)
+		{
+			double side1 = 0;
+			double side2 = 0;
+			double side3 = 0;
+			char* result = analyzeTriangle(side1, side2, side3);
+			Assert::AreEqual("Not a triangle", result);
+		}
+		TEST_METHOD(TestMethod5)
+		{
+			double side1 = -5;
+			double side2 = 5;
+			double side3 = 9;
+			char* result = analyzeTriangle(side1, side2, side3);
+			Assert::AreEqual("Not a triangle", result);
+		}
 	};
 	TEST_CLASS(JoseTesting) //Testing for Triangle using coordinates
 	{
