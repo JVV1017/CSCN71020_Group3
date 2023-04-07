@@ -53,7 +53,9 @@ int main()
 			// Added case for rectangle function
 		case 2:
 			printf_s("RECTANGLE SELECTED\n");
-			rectangleSolver();
+
+			double* arrayofInput = rectangleinput();
+			rectangleSolver(arrayofInput[0],arrayofInput[1],arrayofInput[2],arrayofInput[3],arrayofInput[4],arrayofInput[5],arrayofInput[6],arrayofInput[7]);
 			break;
 		case 0:
 			continueProgram = false;
