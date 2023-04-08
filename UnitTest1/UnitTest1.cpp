@@ -108,8 +108,63 @@ namespace TestSuitDevelopmentGroup3
 	TEST_CLASS(EvanTesting) //Testing for Rectange using coordinates
 	{
 	public:
+		TEST_METHOD(TestCase1)
+		{
+			double x1 = 0;
+			double y1 = 0;
+			double x2 = 0;
+			double y2 = 5;
+			double x3 = 5;
+			double y3 = 5;
+			double x4 = 5;
+			double y4 = 0;
 
-		
+			char* actual = rectangleSolver(x1, y1, x2, y2, x3, y3, x4, y4);
+			Assert::AreEqual("The points form a Rectangle", actual);
+
+		};
+		TEST_METHOD(TestCase2)
+		{
+			double x1 = 16;
+			double y1 = 10;
+			double x2 = 0;
+			double y2 = 0;
+			double x3 = 7;
+			double y3 = 11;
+			double x4 = 7;
+			double y4 = 0;
+			char* expected = "The points does not form a Rectangle";
+			char* actual = rectangleSolver(x1, y1, x2, y2, x3, y3, x4, y4);
+			Assert::AreEqual(expected, actual);
+		};
+		TEST_METHOD(TestCase3)
+		{
+			double x1 = -8.3;
+			double y1 = -5.7;
+			double x2 = -8.3;
+			double y2 = -2.1;
+			double x3 = -2.5;
+			double y3 = -2.1;
+			double x4 = -2.5;
+			double y4 = -5.7;
+			char* expected = "The points form a Rectangle";
+			char* actual = rectangleSolver(x1, y1, x2, y2, x3, y3, x4, y4);
+			Assert::AreEqual(expected, actual);
+		};
+		TEST_METHOD(TestCase4)
+		{
+			double x1 = 1.5;
+			double y1 = -3.7;
+			double x2 = -2.3;
+			double y2 = 0.9;
+			double x3 = -7.1;
+			double y3 = -0.3;
+			double x4 = -3.3;
+			double y4 = -4.9;
+			char* expected = "The points form a Rectangle";
+			char* actual = rectangleSolver(x1, y1, x2, y2, x3, y3, x4, y4);
+			Assert::AreEqual(expected, actual);
+		};
 
 	};
 	TEST_CLASS(HaydenTesting) // Testing for Rectangle for area and perimeter

@@ -100,7 +100,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;C:\Users\harsh\OneDrive\Desktop\Group project\PolygonChecker\x64;D:\SEM 1\Software implementant\CSA group project 1\PolygonChecker\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;D:\BCS\CSA group project 1\PolygonChecker\x64\Debug;D:\SEM 1\Software implementant\CSA group project 1\PolygonChecker\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>main.obj;triangleSolver.obj;rectangleSolver.obj;trianglecoordintes.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
