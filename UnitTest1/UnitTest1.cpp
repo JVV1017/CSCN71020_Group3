@@ -71,6 +71,37 @@ namespace TestSuitDevelopmentGroup3
 	TEST_CLASS(HarshTesting) //Testing for Triangle inside angles
 	{
 	public:
+		TEST_METHOD(TestMethod1)
+		{
+			double a = 3.0;
+			double b = 4.0;
+			double c = 5.0;
+			double expected[] = { 36.8699, 53.1301, 90.0 };
+			double* result = triangleAngles(a, b, c);
+			for (int i = 0; i < 3; i++) {
+				Assert::AreNotEqual(expected[i], result[i]);
+			}
+		};
+		TEST_METHOD(TestMethod2)
+		{
+			double a = 6;
+			double b = 8;
+			double c = 9;
+			double* result = triangleAngles(a, b, c);
+			Assert::AreNotEqual(40.80, result[0]);
+			Assert::AreNotEqual(60.61, result[1]);
+			Assert::AreNotEqual(78.58, result[2]);
+		}
+		TEST_METHOD(TestMethod3)
+		{
+			double a = 5;
+			double b = 5;
+			double c = 5;
+			double* result = triangleAngles(a, b, c);
+			Assert::AreNotEqual(60.0, result[0]);
+			Assert::AreNotEqual(60.0, result[1]);
+			Assert::AreNotEqual(60.0, result[2]);
+		}
 
 		
 	};
